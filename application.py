@@ -31,7 +31,7 @@ def main():
         
         img_with_boxes = results.plot()
         img_rgb = cv2.cvtColor(img_with_boxes, cv2.COLOR_BGR2RGB)
-        st.image(img_rgb, width=360, caption=f'ผลการจัดจำแนกอันดับที่ 1: {predicted_class} (ความมั่นใจ {confidence:.2f}%)')
+        st.image(img_rgb, width=480, caption=f'ผลการจัดจำแนกอันดับที่ 1: {predicted_class} (ความมั่นใจ {confidence:.2f}%)')
         try:
             tfile.close()
             os.unlink(tfile.name)
