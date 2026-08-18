@@ -10,7 +10,7 @@ def main():
     st.write('<p style="font-size: 22px;">ผลการจัดจำแนกรูปภาพ Image classify from YOLO Model</p>', unsafe_allow_html=True)
     st.sidebar.header("งานวิจัยของศุภกร วงษ์เรืองพิบูล")
 
-    model_path = "bestAcc1=0.842.pt"
+    model_path = "BestImageClassify.pt"
     uploaded_file = st.sidebar.file_uploader("Please select image file…", type=["jpg", "jpeg", "png"])
 
     if uploaded_file is not None:
